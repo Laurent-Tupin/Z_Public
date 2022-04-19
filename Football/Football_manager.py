@@ -198,12 +198,12 @@ def f_BuildTeams(d_players, bl_print = False):
 
 # Get the PLayers
 try:
-    df_players = pd.read_excel(r'..\..\0_CompanyCopy\IHSMarkit\0_Personal_doc\SCAA Tuesdays Football.xlsx', 
+    df_players = pd.read_excel(r'..\..\0_CompanyCopy\0_Personal_doc\SCAA Tuesdays Football.xlsx', 
                                sheet_name = 'Team', header = 0, index_col = None,
                                dtype={'Player':str,'Rate':float})
     print('here')
 except:
-    str_path = r'C:\Users\laurent.tupin\OneDrive - IHS Markit\Documents\Github\0_CompanyCopy\IHSMarkit\0_Personal_doc'
+    str_path = r'C:\Users\laurent.tupin\OneDrive - IHS Markit\Documents\Github\0_CompanyCopy\0_Personal_doc'
     df_players = pd.read_excel(str_path + r'\SCAA Tuesdays Football.xlsx', 
                                sheet_name = 'Team', header = 0, index_col = None,
                                dtype={'Player':str,'Rate':float})
