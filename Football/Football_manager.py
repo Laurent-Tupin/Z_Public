@@ -227,15 +227,19 @@ elif len(d_players) <= 15:
     
 # Print the result    
 print(' White team:')
+random.shuffle(l_wh)
 display_teamList(l_wh)
+print('  * White score:', round(i_w, 2), '\n')
+
 print(' Color team: ')
+random.shuffle(l_col)
 display_teamList(l_col)
+print('  * Color score:', round(i_col, 2), '\n')
+
 if bl_15:
     print(' Red team: ')
+    random.shuffle(l_red)
     display_teamList(l_red)
-print('  * White score:', round(i_w, 2), '\n')
-print('  * Color score:', round(i_col, 2), '\n')
-if bl_15:
     print('  * Red score:', i_red, '\n')
 
 
