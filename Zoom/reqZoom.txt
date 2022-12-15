@@ -1,0 +1,2 @@
+vidstream==0.0.14
+## https://pypi.org/project/vidstream/
